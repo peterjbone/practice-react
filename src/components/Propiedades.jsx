@@ -1,21 +1,31 @@
 import React from "react";
 
 //! palabra "props" tampoco funciona, tienes que desesctructurar
-const Propiedades = ({ mensajePorDefecto = "hi", mensajeDesdeApp }) => {
+const Propiedades = ({
+	mensajePorDefecto = "hi",
+	mensajeDesdeApp,
+	numero,
+	booleano
+}) => {
 	//console.log(mensajePorDefecto);
 
 	return (
 		<div>
 			<h2>Propiedades</h2>
-			<p>{mensajePorDefecto}</p>
-			<p>{mensajeDesdeApp}</p>
+			<p>prop por defecto: {mensajePorDefecto}</p>
+			<p>props que llegan desde app</p>
+			<ul>
+				<li>texto: {mensajeDesdeApp}</li>
+				<li>número: {numero}</li>
+				<li>booleano: {booleano}</li>
+			</ul>
 		</div>
 	);
 };
 
 //! defaultProps ha dejado de funcionar en react 18
 /* Propiedades.defaultProps = {
-	mensajePorDefecto: "Hi"
+	mensajePorDefecto: "mensaje random"
 };
  */
 export default Propiedades;

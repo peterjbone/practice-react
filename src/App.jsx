@@ -44,7 +44,11 @@ function App() {
 				<hr />
 				<Componente mensaje="hola soy el componente funcional" />
 				<hr />
-				<Propiedades mensajeDesdeApp="hi this is a message from app.jsx" />
+				<Propiedades
+					mensajeDesdeApp="hi this is a message from app.jsx"
+					numero={4}
+					booleano={true}
+				/>
 			</div>
 		</>
 	);
