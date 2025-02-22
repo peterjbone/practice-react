@@ -52,6 +52,7 @@ function App() {
 					objeto={{ nombre: "joao", edad: 23 }}
 					elemento={<b>texto con negrita</b>}
 					funcion={(num) => num * num}
+					componente={<Componente mensaje="soy un componente dentro de otro" />}
 				/>
 			</div>
 		</>

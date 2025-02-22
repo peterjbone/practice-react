@@ -9,7 +9,8 @@ const Propiedades = ({
 	array,
 	objeto,
 	elemento,
-	funcion
+	funcion,
+	componente
 }) => {
 	//console.log(mensajePorDefecto);
 
@@ -31,6 +32,7 @@ const Propiedades = ({
 				</li>
 				<li>{elemento}</li>
 				<li>{array.map(funcion).join(", ")}</li>
+				<li>{componente}</li>
 			</ul>
 		</div>
 	);
