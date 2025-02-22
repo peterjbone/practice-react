@@ -44,7 +44,7 @@ function App() {
 				<hr />
 				<Componente mensaje="hola soy el componente funcional" />
 				<hr />
-				<Propiedades bruh="bruh" />
+				<Propiedades mensajeDesdeApp="hi this is a message from app.jsx" />
 			</div>
 		</>
 	);
