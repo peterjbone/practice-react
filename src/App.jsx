@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 import Componente from "./components/Componente.jsx";
+import Propiedades from "./components/Propiedades.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -41,6 +42,7 @@ function App() {
 
 			<section>
 				<Componente mensaje="hola soy el componente funcional" />
+				<Propiedades />
 			</section>
 		</>
 	);
