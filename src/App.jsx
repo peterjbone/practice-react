@@ -1,17 +1,14 @@
 import react, { useState } from "react";
 import reactLogo from "./assets/react.svg";
-//import viteLogo from "/vite.svg";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
+import Componente from "./components/Componente.jsx";
 
 function App() {
-	//const [count, setCount] = useState(0);
 	let subtitulo = "practicing react";
 	let auth = true;
 	let cuatro = 4;
 	let estaciones = ["Primavera", "Verano", "Otoño", "Invierno"];
-
-	//console.log(uuidv4());
 
 	//*********************** APP COMPONENT
 	return (
@@ -41,6 +38,10 @@ function App() {
 				<input type="text" id="nombre" />
 			</div>
 			<hr />
+
+			<section>
+				<Componente />
+			</section>
 		</>
 	);
 }

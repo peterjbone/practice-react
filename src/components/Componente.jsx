@@ -6,4 +6,4 @@ class Componente extends Component {
 	}
 }
 
-export default Component;
+export default Componente;
