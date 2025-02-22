@@ -22,30 +22,30 @@ function App() {
 
 			<h1>React</h1>
 
-			<hr />
-			<h2>Sintaxis JSX</h2>
-			<h2>{subtitulo}</h2>
-			<p>Cuatro más cuatro es igual a: {4 + cuatro}</p>
-			<p>{auth ? "usuario logeado" : "usuario NO logeado"}</p>
-			<p>
-				<b>Estaciones del año</b>
-			</p>
-			<ul>
-				{estaciones.map((item) => (
-					<li key={uuidv4()}>{item}</li>
-				))}
-			</ul>
 			<div>
-				<label htmlFor="nombre">Nombre:</label>
-				<input type="text" id="nombre" />
-			</div>
-			<hr />
-
-			<section>
+				<section id="sintaxis jsx">
+					<h2>Sintaxis JSX</h2>
+					<h2>{subtitulo}</h2>
+					<p>Cuatro más cuatro es igual a: {4 + cuatro}</p>
+					<p>{auth ? "usuario logeado" : "usuario NO logeado"}</p>
+					<p>
+						<b>Estaciones del año</b>
+					</p>
+					<ul>
+						{estaciones.map((item) => (
+							<li key={uuidv4()}>{item}</li>
+						))}
+					</ul>
+					<div>
+						<label htmlFor="nombre">Nombre:</label>
+						<input type="text" id="nombre" />
+					</div>
+				</section>
+				<hr />
 				<Componente mensaje="hola soy el componente funcional" />
 				<hr />
 				<Propiedades />
-			</section>
+			</div>
 		</>
 	);
 }
