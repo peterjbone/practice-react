@@ -1,11 +1,11 @@
-import { useState } from "react";
+import react, { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
-	const [count, setCount] = useState(0);
+	//const [count, setCount] = useState(0);
 	let subtitulo = "practicing react";
 	let auth = true;
 	let cuatro = 4;
@@ -17,14 +17,11 @@ function App() {
 	return (
 		<>
 			<div>
-				<a href="https://vite.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
 				<a href="https://react.dev" target="_blank">
 					<img src={reactLogo} className="logo react" alt="React logo" />
 				</a>
 			</div>
-			<h1>Vite + React</h1>
+			<h1>React</h1>
 			<hr />
 			<h2>{subtitulo}</h2>
 			<p>Cuatro más cuatro es igual a: {4 + cuatro}</p>
