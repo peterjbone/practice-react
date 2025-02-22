@@ -50,6 +50,8 @@ function App() {
 					booleano={true}
 					array={[1, 2, 3]}
 					objeto={{ nombre: "joao", edad: 23 }}
+					elemento={<b>texto con negrita</b>}
+					funcion={(num) => num * num}
 				/>
 			</div>
 		</>

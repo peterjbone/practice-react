@@ -7,7 +7,9 @@ const Propiedades = ({
 	numero,
 	booleano,
 	array,
-	objeto
+	objeto,
+	elemento,
+	funcion
 }) => {
 	//console.log(mensajePorDefecto);
 
@@ -27,6 +29,8 @@ const Propiedades = ({
 				<li>
 					objeto: soy {objeto.nombre} y tengo {objeto.edad} años
 				</li>
+				<li>{elemento}</li>
+				<li>{array.map(funcion).join(", ")}</li>
 			</ul>
 		</div>
 	);
