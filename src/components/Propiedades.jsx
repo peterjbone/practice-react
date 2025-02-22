@@ -13,11 +13,14 @@ const Propiedades = ({
 		<div>
 			<h2>Propiedades</h2>
 			<p>prop por defecto: {mensajePorDefecto}</p>
-			<p>props que llegan desde app</p>
+			<p>
+				{" "}
+				<b>props que llegan desde app</b>
+			</p>
 			<ul>
 				<li>texto: {mensajeDesdeApp}</li>
 				<li>número: {numero}</li>
-				<li>booleano: {booleano}</li>
+				<li>booleano: {booleano ? "verdadero" : "falso"}</li>
 			</ul>
 		</div>
 	);
