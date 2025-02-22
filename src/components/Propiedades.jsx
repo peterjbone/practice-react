@@ -7,12 +7,14 @@ const Propiedades = (props) => {
 		<div>
 			<h2>Propiedades</h2>
 			<p>{props.mensajePorDefecto}</p>
+			<p>{props.bruh}</p>
 		</div>
 	);
 };
 
-Propiedades.defaultProps = {
+//! default props ha dejado de funcionar en react 18
+/* Propiedades.defaultProps = {
 	mensajePorDefecto: "Hi"
 };
-
+ */
 export default Propiedades;
