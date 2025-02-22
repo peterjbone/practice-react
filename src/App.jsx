@@ -40,7 +40,7 @@ function App() {
 			<hr />
 
 			<section>
-				<Componente mensaje="hola soy el componente, bruh" />
+				<Componente mensaje="hola soy el componente funcional" />
 			</section>
 		</>
 	);
