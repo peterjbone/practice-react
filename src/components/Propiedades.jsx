@@ -5,7 +5,9 @@ const Propiedades = ({
 	mensajePorDefecto = "hi",
 	mensajeDesdeApp,
 	numero,
-	booleano
+	booleano,
+	array,
+	objeto
 }) => {
 	//console.log(mensajePorDefecto);
 
@@ -21,6 +23,10 @@ const Propiedades = ({
 				<li>texto: {mensajeDesdeApp}</li>
 				<li>número: {numero}</li>
 				<li>booleano: {booleano ? "verdadero" : "falso"}</li>
+				<li>array: {array.join(", ")}</li>
+				<li>
+					objeto: soy {objeto.nombre} y tengo {objeto.edad} años
+				</li>
 			</ul>
 		</div>
 	);
