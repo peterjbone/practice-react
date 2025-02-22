@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
 	const [count, setCount] = useState(0);
 	let subtitulo = "practicing react";
-	let auth = false;
+	let auth = true;
 
 	//*********************** APP COMPONENT
 	return (
@@ -22,6 +22,7 @@ function App() {
 			<h1>Vite + React</h1>
 			<hr />
 			<h2>{subtitulo}</h2>
+			<p>{auth ? "usuario logeado" : "usuario NO logeado"}</p>
 			<div>
 				<label htmlFor="nombre">Nombre:</label>
 				<input type="text" id="nombre" />
