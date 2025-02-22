@@ -11,7 +11,7 @@ function App() {
 	let cuatro = 4;
 	let estaciones = ["Primavera", "Verano", "Otoño", "Invierno"];
 
-	console.log(uuidv4());
+	//console.log(uuidv4());
 
 	//*********************** APP COMPONENT
 	return (
@@ -34,7 +34,7 @@ function App() {
 			</p>
 			<ul>
 				{estaciones.map((item) => (
-					<li>{item}</li>
+					<li key={uuidv4()}>{item}</li>
 				))}
 			</ul>
 			<div>
