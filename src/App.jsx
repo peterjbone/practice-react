@@ -1,6 +1,6 @@
 import react, { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+//import viteLogo from "/vite.svg";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 
@@ -21,7 +21,9 @@ function App() {
 					<img src={reactLogo} className="logo react" alt="React logo" />
 				</a>
 			</div>
+
 			<h1>React</h1>
+
 			<hr />
 			<h2>{subtitulo}</h2>
 			<p>Cuatro más cuatro es igual a: {4 + cuatro}</p>
@@ -39,14 +41,6 @@ function App() {
 				<input type="text" id="nombre" />
 			</div>
 			<hr />
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
-			</div>
 		</>
 	);
 }
