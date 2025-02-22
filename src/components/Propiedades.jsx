@@ -1,18 +1,18 @@
 import React from "react";
 
-const Propiedades = (props) => {
-	console.log(props.mensajePorDefecto);
+const Propiedades = ({ mensajePorDefecto = "hi", bruh }) => {
+	console.log(mensajePorDefecto);
 
 	return (
 		<div>
 			<h2>Propiedades</h2>
-			<p>{props.mensajePorDefecto}</p>
-			<p>{props.bruh}</p>
+			<p>{mensajePorDefecto}</p>
+			<p>{bruh}</p>
 		</div>
 	);
 };
 
-//! default props ha dejado de funcionar en react 18
+//! defaultProps ha dejado de funcionar en react 18
 /* Propiedades.defaultProps = {
 	mensajePorDefecto: "Hi"
 };
