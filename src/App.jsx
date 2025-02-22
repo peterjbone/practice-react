@@ -26,7 +26,7 @@ function App() {
 			<p>Cuatro más cuatro es igual a: {4 + cuatro}</p>
 			<p>{auth ? "usuario logeado" : "usuario NO logeado"}</p>
 			<p>
-				<b>Estciones del año</b>
+				<b>Estaciones del año</b>
 			</p>
 			<ul>
 				{estaciones.map((item) => (
@@ -40,7 +40,7 @@ function App() {
 			<hr />
 
 			<section>
-				<Componente />
+				<Componente mensaje="hola soy el componente, bruh" />
 			</section>
 		</>
 	);
