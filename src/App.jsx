@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -9,6 +10,8 @@ function App() {
 	let auth = true;
 	let cuatro = 4;
 	let estaciones = ["Primavera", "Verano", "Otoño", "Invierno"];
+
+	console.log(uuidv4());
 
 	//*********************** APP COMPONENT
 	return (
