@@ -24,12 +24,18 @@ function Logout() {
 }
 
 class RenderizadoCondicional extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			session: true
+		};
+	}
+
 	render() {
 		return (
 			<div>
 				<h2>Renderizao condicional</h2>
-				<Login />
-				<Logout />
+				{this.state.session ? <Login /> : <Logout />}
 			</div>
 		);
 	}
