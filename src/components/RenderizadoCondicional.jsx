@@ -18,7 +18,7 @@ function Login() {
 function Logout() {
 	return (
 		<div>
-			<h3>Login</h3>
+			<h3>Logout</h3>
 		</div>
 	);
 }
@@ -28,6 +28,8 @@ class RenderizadoCondicional extends React.Component {
 		return (
 			<div>
 				<h2>Renderizao condicional</h2>
+				<Login />
+				<Logout />
 			</div>
 		);
 	}
