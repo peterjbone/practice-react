@@ -46,7 +46,7 @@ function App() {
 				<hr />
 				<Propiedades
 					mensajeDesdeApp="hi this is a message from app.jsx"
-					numero={4}
+					numero="5"
 					booleano={true}
 					array={[1, 2, 3]}
 					objeto={{ nombre: "joao", edad: 23 }}
