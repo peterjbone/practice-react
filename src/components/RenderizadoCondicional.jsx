@@ -7,6 +7,14 @@ import React from "react";
 export default RenderizadoCondicional;
  */
 
+function Login() {
+	return (
+		<div>
+			<h3>Login</h3>
+		</div>
+	);
+}
+
 class RenderizadoCondicional extends React.Component {
 	render() {
 		return (
