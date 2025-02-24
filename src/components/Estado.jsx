@@ -10,7 +10,15 @@ import React from "react";
 
 export default Estado; */
 
+//? estado en componente de clase
 class Estado extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			contador: 0
+		};
+	}
+
 	render() {
 		return (
 			<div>
