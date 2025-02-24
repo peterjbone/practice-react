@@ -10,7 +10,7 @@ export default RenderizadoCondicional;
 function Login() {
 	return (
 		<div>
-			<h3>Logout</h3>
+			<h3>Login</h3>
 		</div>
 	);
 }
