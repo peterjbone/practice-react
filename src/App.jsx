@@ -4,6 +4,7 @@ import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 import Componente from "./components/Componente.jsx";
 import Propiedades from "./components/Propiedades.jsx";
+import Estado from "./components/Estado.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -54,6 +55,8 @@ function App() {
 					funcion={(num) => num * num}
 					componente={<Componente mensaje="soy un componente dentro de otro" />}
 				/>
+				<hr />
+				<Estado />
 			</div>
 		</>
 	);
