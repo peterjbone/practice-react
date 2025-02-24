@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 class RenderizadoElementos extends React.Component {
 	constructor(props) {
@@ -13,7 +14,11 @@ class RenderizadoElementos extends React.Component {
 			<div>
 				<h2>Renderizado de elementos</h2>
 				<b>estaciones del año</b>
-				<ol></ol>
+				<ol>
+					{this.state.seasons.map((item) => (
+						<li key={uuidv4()}>{item}</li>
+					))}
+				</ol>
 			</div>
 		);
 	}
