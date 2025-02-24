@@ -11,9 +11,7 @@ class RenderizadoCondicional extends React.Component {
 	render() {
 		return (
 			<div>
-				<h2>Estado</h2>
-				<p>padre: {this.state.contador}</p>
-				<EstadoAHijo contadorHijo={this.state.contador} />
+				<h2>Renderizao condicional</h2>
 			</div>
 		);
 	}

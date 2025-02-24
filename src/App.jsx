@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import Componente from "./components/Componente.jsx";
 import Propiedades from "./components/Propiedades.jsx";
 import Estado from "./components/Estado.jsx";
+import RenderizadoCondicional from "./components/RenderizadoCondicional.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -57,6 +58,8 @@ function App() {
 				/>
 				<hr />
 				<Estado />
+				<hr />
+				<RenderizadoCondicional />
 			</div>
 		</>
 	);
