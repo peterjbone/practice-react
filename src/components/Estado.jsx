@@ -1,5 +1,15 @@
 import React from "react";
 
+//? estado en componente funcionales
+
+function EstadoAHijo(props) {
+	return (
+		<div>
+			<h3>hijo: {props.contadorHijo}</h3>
+		</div>
+	);
+}
+
 //? estado en componente de clase
 class Estado extends React.Component {
 	constructor(props) {
@@ -18,7 +28,8 @@ class Estado extends React.Component {
 		return (
 			<div>
 				<h2>Estado</h2>
-				<p>{this.state.contador}</p>
+				<p>padre: {this.state.contador}</p>
+				<EstadoAHijo contadorHijo={this.state.contador} />
 			</div>
 		);
 	}
