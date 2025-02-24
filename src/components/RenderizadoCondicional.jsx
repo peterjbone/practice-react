@@ -15,6 +15,14 @@ function Login() {
 	);
 }
 
+function Logout() {
+	return (
+		<div>
+			<h3>Login</h3>
+		</div>
+	);
+}
+
 class RenderizadoCondicional extends React.Component {
 	render() {
 		return (
