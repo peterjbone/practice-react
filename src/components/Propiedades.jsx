@@ -46,7 +46,7 @@ const Propiedades = ({
  */
 
 Propiedades.propTypes = {
-	numero: PropTypes.number
+	numero: PropTypes.number.isRequired
 };
 
 export default Propiedades;
