@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //! palabra "props" tampoco funciona, tienes que desesctructurar
 const Propiedades = ({
@@ -43,4 +44,9 @@ const Propiedades = ({
 	mensajePorDefecto: "mensaje random"
 };
  */
+
+Propiedades.propTypes = {
+	numero: PropTypes.number.isRequired
+};
+
 export default Propiedades;
