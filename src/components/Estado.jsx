@@ -17,12 +17,18 @@ class Estado extends React.Component {
 		this.state = {
 			contador: 0
 		};
+		setInterval(() => {
+			this.setState({
+				contador: this.state.contador + 1
+			});
+		}, 1000);
 	}
 
 	render() {
 		return (
 			<div>
 				<h2>Estado</h2>
+				<p>{this.state.contador}</p>
 			</div>
 		);
 	}
