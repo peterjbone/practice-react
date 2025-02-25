@@ -7,6 +7,7 @@ import Propiedades from "./components/Propiedades.jsx";
 import Estado from "./components/Estado.jsx";
 import RenderizadoCondicional from "./components/RenderizadoCondicional.jsx";
 import RenderizadoElementos from "./components/RenderizadoElementos.jsx";
+import Eventos from "./components/Eventos.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -63,6 +64,8 @@ function App() {
 				<RenderizadoCondicional />
 				<hr />
 				<RenderizadoElementos />
+				<hr />
+				<Eventos />
 			</div>
 		</>
 	);

@@ -9,3 +9,5 @@ class Eventos extends Component {
 		);
 	}
 }
+
+export default Eventos;
