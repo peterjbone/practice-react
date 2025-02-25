@@ -6,7 +6,9 @@ import data from "../helpers/data.json";
 function ElementoDeLista({ web, name }) {
 	return (
 		<li>
-			<a href={web}>{name}</a>
+			<a href={web} target="_blank">
+				{name}
+			</a>
 		</li>
 	);
 }
