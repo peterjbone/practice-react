@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import data from "../helpers/data.json";
+//import { v4 as uuidv4 } from "uuid";
 
 function ElementoDeLista({ web, name }) {
 	return (
@@ -19,7 +20,7 @@ class RenderizadoElementos extends React.Component {
 	}
 
 	render() {
-		console.log(data);
+		//console.log(data);
 
 		return (
 			<div>
@@ -32,8 +33,8 @@ class RenderizadoElementos extends React.Component {
 				</ol>
 				<h3>Frameworks js</h3>
 				<ul>
-					{data.map((item) => (
-						<ElementoDeLista web={item.web} name={item.name} />
+					{data.frameworks.map((item) => (
+						<ElementoDeLista key={uuidv4()} web={item.web} name={item.name} />
 					))}
 				</ul>
 			</div>
