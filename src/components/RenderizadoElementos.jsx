@@ -2,6 +2,14 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import data from "../helpers/data.json";
 
+function ElementoDeLista(props) {
+	return (
+		<li>
+			<a href="">{props.name}</a>
+		</li>
+	);
+}
+
 class RenderizadoElementos extends React.Component {
 	constructor(props) {
 		super(props);
@@ -11,6 +19,8 @@ class RenderizadoElementos extends React.Component {
 	}
 
 	render() {
+		console.log(data);
+
 		return (
 			<div>
 				<h2>Renderizado de elementos</h2>
