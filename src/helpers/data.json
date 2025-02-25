@@ -6,14 +6,14 @@
 			"web": "https://reactjs.org"
 		},
 		{
-			"id": 1,
-			"name": "react",
-			"web": "https://reactjs.org"
+			"id": 2,
+			"name": "Angular",
+			"web": "https://angular.io"
 		},
 		{
-			"id": 1,
-			"name": "react",
-			"web": "https://reactjs.org"
+			"id": 3,
+			"name": "Vue",
+			"web": "https://vuejs.org"
 		},
 		{
 			"id": 1,
