@@ -16,14 +16,14 @@
 			"web": "https://vuejs.org"
 		},
 		{
-			"id": 1,
-			"name": "react",
-			"web": "https://reactjs.org"
+			"id": 4,
+			"name": "Polymer",
+			"web": "https://polymer-project.org"
 		},
 		{
-			"id": 1,
-			"name": "react",
-			"web": "https://reactjs.org"
+			"id": 5,
+			"name": "Svelte",
+			"web": "https://svelte.dev"
 		}
 	]
 }
