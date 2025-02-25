@@ -2,10 +2,10 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import data from "../helpers/data.json";
 
-function ElementoDeLista(props) {
+function ElementoDeLista({ web, name }) {
 	return (
 		<li>
-			<a href="">{props.name}</a>
+			<a href={web}>{name}</a>
 		</li>
 	);
 }
@@ -30,6 +30,12 @@ class RenderizadoElementos extends React.Component {
 						<li key={uuidv4()}>{item}</li>
 					))}
 				</ol>
+				<h3>Frameworks js</h3>
+				<ul>
+					{data.map((item) => (
+						<ElementoDeLista web={item.web} name={item.name} />
+					))}
+				</ul>
 			</div>
 		);
 	}
