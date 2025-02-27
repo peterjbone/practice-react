@@ -11,7 +11,11 @@ class Eventos extends Component {
 		this.restar = this.restar.bind(this);
 	}
 
-	sumar() {}
+	sumar() {
+		this.setState({
+			contador: this.state.contador + 1
+		});
+	}
 
 	restar() {}
 
