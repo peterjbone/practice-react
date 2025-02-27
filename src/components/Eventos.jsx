@@ -6,6 +6,9 @@ class Eventos extends Component {
 		this.state = {
 			contador: 0
 		};
+
+		this.sumar = this.sumar.bind(this);
+		this.restar = this.restar.bind(this);
 	}
 
 	sumar() {}
