@@ -17,7 +17,11 @@ class Eventos extends Component {
 		});
 	}
 
-	restar() {}
+	restar() {
+		this.setState({
+			contador: this.state.contador - 1
+		});
+	}
 
 	render() {
 		return (
