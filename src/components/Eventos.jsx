@@ -67,3 +67,13 @@ export class EventosES7 extends Component {
 		);
 	}
 }
+
+export class ExtraEventos extends Component {
+	render() {
+		return (
+			<div>
+				<h2>Otros eventos</h2>
+			</div>
+		);
+	}
+}
