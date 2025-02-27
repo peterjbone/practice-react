@@ -12,6 +12,9 @@ class Eventos extends Component {
 		return (
 			<div>
 				<h2>Eventos con componentes de clase</h2>
+				<p>
+					<b></b>
+				</p>
 			</div>
 		);
 	}
