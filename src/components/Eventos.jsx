@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Eventos extends Component {
+export class EventosES6 extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -36,5 +36,3 @@ class Eventos extends Component {
 		);
 	}
 }
-
-export default Eventos;
