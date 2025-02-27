@@ -38,27 +38,21 @@ export class EventosES6 extends Component {
 }
 
 export class EventosES7 extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			contador: 0
-		};
+	state = {
+		contador: 0
+	};
 
-		this.sumar = this.sumar.bind(this);
-		this.restar = this.restar.bind(this);
-	}
-
-	sumar() {
+	sumar = (e) => {
 		this.setState({
 			contador: this.state.contador + 1
 		});
-	}
+	};
 
-	restar() {
+	restar = (e) => {
 		this.setState({
 			contador: this.state.contador - 1
 		});
-	}
+	};
 
 	render() {
 		return (
