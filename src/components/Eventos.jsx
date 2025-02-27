@@ -6,15 +6,19 @@ class Eventos extends Component {
 		this.state = {
 			contador: 0
 		};
-	}
+  }
+  
+
 
 	render() {
 		return (
 			<div>
 				<h2>Eventos con componentes de clase</h2>
-				<p>
-					<b></b>
-				</p>
+        <nav>
+          <button onClick={}>+</button>
+          <button onClick={}>-</button>
+        </nav>
+        <h3>{this.state.contador}</h3>
 			</div>
 		);
 	}
