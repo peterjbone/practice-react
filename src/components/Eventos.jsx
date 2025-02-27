@@ -69,17 +69,16 @@ export class EventosES7 extends Component {
 }
 
 export class ExtraEventos extends Component {
-	handleCLick = (e) => {
-		console.log("hi");
-		console.log(e);
-		console.log(e.target);
+	handleCLick = (e, mensaje) => {
+		console.log("evento", e);
+		console.log("mensaje", mensaje);
 	};
 
 	render() {
 		return (
 			<div>
 				<h2>Otros eventos</h2>
-				<button onClick={this.handleCLick}>saludar</button>
+				<button onClick={(e) => this.handleCLick(e, mensaje)}>saludar</button>
 			</div>
 		);
 	}
