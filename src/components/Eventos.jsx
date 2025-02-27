@@ -69,7 +69,7 @@ export class EventosES7 extends Component {
 }
 
 function Boton({ funcion }) {
-	return <button onClick={funcion}>boton componente</button>;
+	return <button onClick={(e) => funcion(e, "hola")}>boton componente</button>;
 }
 
 export class ExtraEventos extends Component {
@@ -82,7 +82,7 @@ export class ExtraEventos extends Component {
 		return (
 			<div>
 				<h2>Otros eventos</h2>
-				<button onClick={(e) => this.handleCLick(e, mensaje)}>saludar</button>
+				<button onClick={(e) => this.handleCLick(e, "hola")}>saludar</button>
 				<Boton funcion={this.handleCLick} />
 			</div>
 		);
