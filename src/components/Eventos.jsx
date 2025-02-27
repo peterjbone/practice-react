@@ -69,10 +69,14 @@ export class EventosES7 extends Component {
 }
 
 export class ExtraEventos extends Component {
+
+  function handleCLick(){}
+
 	render() {
 		return (
 			<div>
 				<h2>Otros eventos</h2>
+        <button onClick={}>saludar</button>
 			</div>
 		);
 	}
