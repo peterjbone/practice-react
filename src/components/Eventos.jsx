@@ -70,7 +70,10 @@ export class EventosES7 extends Component {
 
 export class ExtraEventos extends Component {
 
-  function handleCLick(){}
+  function handleCLick() {
+    console.log("hi");
+    
+  }
 
 	render() {
 		return (
