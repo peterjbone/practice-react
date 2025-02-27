@@ -6,19 +6,21 @@ class Eventos extends Component {
 		this.state = {
 			contador: 0
 		};
-  }
-  
+	}
 
+	sumar() {}
+
+	restar() {}
 
 	render() {
 		return (
 			<div>
 				<h2>Eventos con componentes de clase</h2>
-        <nav>
-          <button onClick={}>+</button>
-          <button onClick={}>-</button>
-        </nav>
-        <h3>{this.state.contador}</h3>
+				<nav>
+					<button onClick={this.sumar}>+</button>
+					<button onClick={this.restar}>-</button>
+				</nav>
+				<h3>{this.state.contador}</h3>
 			</div>
 		);
 	}
