@@ -7,6 +7,8 @@ export default class Padre extends Component {
 	}
 
 	render() {
+		console.log(4, "el componente se dibuja en el DOM");
+
 		return (
 			<div>
 				<h2>Ciclo de vida de los componentes</h2>
