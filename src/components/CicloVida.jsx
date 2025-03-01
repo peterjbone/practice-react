@@ -4,6 +4,10 @@ export default class Padre extends Component {
 	constructor(props) {
 		super(props);
 		console.log(0, "el componente se inicializa, aun NO esta en el DOM");
+
+		this.state = {
+			hora: new Date().toLocaleTimeString()
+		};
 	}
 
 	render() {
