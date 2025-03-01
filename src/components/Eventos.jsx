@@ -68,11 +68,11 @@ export class EventosES7 extends Component {
 	}
 }
 
-/* function Boton({ funcion }) {
+function Boton({ funcion }) {
 	return <button onClick={funcion}>boton componente</button>;
-} */
+}
 
-const Boton = ({ funcion }) => <button onClick={funcion}>boton componente</button>;
+/* const Boton = ({ funcion }) => <button onClick={funcion}>boton componente</button>; */
 
 export class ExtraEventos extends Component {
 	handleCLick = (e, mensaje) => {
