@@ -16,6 +16,8 @@ export default class Padre extends Component {
 		return (
 			<div>
 				<h2>Ciclo de vida de los componentes</h2>
+				<h3>{this.state.hora}</h3>
+				<button></button>
 			</div>
 		);
 	}
