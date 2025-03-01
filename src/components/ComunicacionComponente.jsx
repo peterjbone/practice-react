@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import React, { Component } from "react";
 
 class Padre extends Component {
@@ -10,3 +9,5 @@ class Padre extends Component {
 		);
 	}
 }
+
+export default Padre;

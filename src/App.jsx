@@ -8,6 +8,7 @@ import Estado from "./components/Estado.jsx";
 import RenderizadoCondicional from "./components/RenderizadoCondicional.jsx";
 import RenderizadoElementos from "./components/RenderizadoElementos.jsx";
 import { EventosES6, EventosES7, ExtraEventos } from "./components/Eventos.jsx";
+import ComunicacionComponente from "./components/ComunicacionComponente.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -70,6 +71,8 @@ function App() {
 				<EventosES7 />
 				<hr />
 				<ExtraEventos />
+				<hr />
+				<ComunicacionComponente />
 			</div>
 		</>
 	);
