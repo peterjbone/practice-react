@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Padre extends Component {
+export default class Padre extends Component {
 	render() {
 		return (
 			<div>
@@ -10,4 +10,6 @@ class Padre extends Component {
 	}
 }
 
-export default Padre;
+function Hijo({ mensaje }) {
+	return <h2>{mensaje}</h2>;
+}
