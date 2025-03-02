@@ -10,6 +10,8 @@ export default class Padre extends Component {
 		};
 	}
 
+	tictac = () => {};
+
 	iniciar = () => {};
 
 	detener = () => {};
