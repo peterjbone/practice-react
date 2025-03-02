@@ -21,7 +21,8 @@ export default class Padre extends Component {
 			<div>
 				<h2>Ciclo de vida de los componentes</h2>
 				<h3>{this.state.hora}</h3>
-				<button></button>
+				<button onClick={iniciar}>iniciar</button>
+				<button onClick={detener}>detener</button>
 			</div>
 		);
 	}
