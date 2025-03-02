@@ -10,6 +10,10 @@ export default class Padre extends Component {
 		};
 	}
 
+	iniciar = () => {};
+
+	detener = () => {};
+
 	render() {
 		console.log(4, "el componente se dibuja en el DOM");
 
