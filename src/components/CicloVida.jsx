@@ -12,6 +12,10 @@ export default class Padre extends Component {
 		this.temporizador = null;
 	}
 
+	componentDidMount() {
+		console.log(1, "el componente ya se encuentra en el DOM`");
+	}
+
 	tictac = () => {
 		this.temporizador = setInterval(() => {
 			this.setState({
