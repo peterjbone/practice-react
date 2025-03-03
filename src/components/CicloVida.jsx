@@ -8,9 +8,17 @@ export default class Padre extends Component {
 		this.state = {
 			hora: new Date().toLocaleTimeString()
 		};
+
+		this.temporizador = null;
 	}
 
-	tictac = () => {};
+	tictac = () => {
+    this.temporizador = setInterval(() => {
+      this.setState({
+        hora: 
+      })
+    }, 1000);
+	};
 
 	iniciar = () => {};
 
