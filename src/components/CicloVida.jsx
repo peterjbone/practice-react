@@ -16,6 +16,10 @@ export default class Padre extends Component {
 		console.log(1, "el componente ya se encuentra en el DOM`");
 	}
 
+	componentDidUpdate() {
+		console.log(2, "el estado o las props han cambiado");
+	}
+
 	tictac = () => {
 		this.temporizador = setInterval(() => {
 			this.setState({
