@@ -20,9 +20,13 @@ export default class Padre extends Component {
 		}, 1000);
 	};
 
-	iniciar = () => {};
+	iniciar = () => {
+		this.tictac();
+	};
 
-	detener = () => {};
+	detener = () => {
+		clearInterval(this.temporizador);
+	};
 
 	render() {
 		console.log(4, "el componente se dibuja en el DOM");
