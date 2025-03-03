@@ -13,11 +13,11 @@ export default class Padre extends Component {
 	}
 
 	tictac = () => {
-    this.temporizador = setInterval(() => {
-      this.setState({
-        hora: 
-      })
-    }, 1000);
+		this.temporizador = setInterval(() => {
+			this.setState({
+				hora: new Date().toLocaleTimeString()
+			});
+		}, 1000);
 	};
 
 	iniciar = () => {};
