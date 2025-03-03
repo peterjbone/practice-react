@@ -16,8 +16,10 @@ export default class Padre extends Component {
 		console.log(1, "el componente ya se encuentra en el DOM`");
 	}
 
-	componentDidUpdate() {
+	componentDidUpdate(prevProps, prevState) {
 		console.log(2, "el estado o las props han cambiado");
+		console.log(prevProps);
+		console.log(prevState);
 	}
 
 	tictac = () => {
