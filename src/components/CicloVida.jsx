@@ -24,7 +24,8 @@ export default class Padre extends Component {
 		console.log(0, "el componente se inicializa, aun NO esta en el DOM");
 
 		this.state = {
-			hora: new Date().toLocaleTimeString()
+			hora: new Date().toLocaleTimeString(),
+			visible: false
 		};
 
 		this.temporizador = null;
@@ -54,10 +55,12 @@ export default class Padre extends Component {
 
 	iniciar = () => {
 		this.tictac();
+		this.setState({ visible: true });
 	};
 
 	detener = () => {
 		clearInterval(this.temporizador);
+		this.setState({ visible: false });
 	};
 
 	render() {
