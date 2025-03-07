@@ -41,10 +41,6 @@ export default class Padre extends Component {
 		console.log(prevState);
 	}
 
-	/* 	componentWillUnmount() {
-		console.log(3, "el componente se elimino del DOM");
-	} */
-
 	tictac = () => {
 		this.temporizador = setInterval(() => {
 			this.setState({
@@ -70,7 +66,7 @@ export default class Padre extends Component {
 			<div>
 				<h2>Ciclo de vida de los componentes</h2>
 				{/* 			<h3>{this.state.hora}</h3> */}
-				<Reloj hora={this.state.hora} />
+				{this.state.visible ? <Reloj hora={this.state.hora} /> : null}
 				<button onClick={this.iniciar}>iniciar</button>
 				<button onClick={this.detener}>detener</button>
 			</div>
