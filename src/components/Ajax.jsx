@@ -17,7 +17,17 @@ export default class Ajax extends Component {
 		let url = "https://pokeapi.co/api/v2/pokemon/";
 		fetch(url)
 			.then((res) => res.json())
-			.then((json) => console.log(json));
+			.then((json) => {
+				console.log(json);
+				json.results.forEach((item) => {
+					fetch(item.url)
+						.then((res) => res.json())
+						.then((json) => {
+							console.log(item.name);
+							console.log(json);
+						});
+				});
+			});
 	}
 
 	render() {
