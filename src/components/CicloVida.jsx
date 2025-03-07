@@ -4,7 +4,19 @@ import React, { Component } from "react";
 	return <h3>{hora}</h3>;
 } */
 
-class Reloj extends Component {}
+class Reloj extends Component {
+	constructor(props) {
+		super(props);
+	}
+
+	componentWillUnmount() {
+		console.log(3, "el componente se elimino del DOM");
+	}
+
+	render() {
+		return <h3>{this.props.hora}</h3>;
+	}
+}
 
 export default class Padre extends Component {
 	constructor(props) {
