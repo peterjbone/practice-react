@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 
+function Pokemon(props) {
+	return (
+		<figure>
+			<img src={props.avatar} alt={props.name} />
+		</figure>
+	);
+}
+
 export default class Ajax extends Component {
 	state = {
 		pokemons: []
