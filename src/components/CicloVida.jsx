@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+function Reloj({ hora }) {
+	return <h3>{hora}</h3>;
+}
+
 export default class Padre extends Component {
 	constructor(props) {
 		super(props);
@@ -48,7 +52,8 @@ export default class Padre extends Component {
 		return (
 			<div>
 				<h2>Ciclo de vida de los componentes</h2>
-				<h3>{this.state.hora}</h3>
+				{/* 			<h3>{this.state.hora}</h3> */}
+				<Reloj hora={this.state.hora} />
 				<button onClick={this.iniciar}>iniciar</button>
 				<button onClick={this.detener}>detener</button>
 			</div>
