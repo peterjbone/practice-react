@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 
-function Reloj({ hora }) {
+/* function Reloj({ hora }) {
 	return <h3>{hora}</h3>;
-}
+} */
+
+class Reloj extends Component {}
 
 export default class Padre extends Component {
 	constructor(props) {
@@ -26,9 +28,9 @@ export default class Padre extends Component {
 		console.log(prevState);
 	}
 
-	componentWillUnmount() {
+	/* 	componentWillUnmount() {
 		console.log(3, "el componente se elimino del DOM");
-	}
+	} */
 
 	tictac = () => {
 		this.temporizador = setInterval(() => {
