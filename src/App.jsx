@@ -10,6 +10,7 @@ import RenderizadoElementos from "./components/RenderizadoElementos.jsx";
 import { EventosES6, EventosES7, ExtraEventos } from "./components/Eventos.jsx";
 import ComunicacionComponente from "./components/ComunicacionComponente.jsx";
 import CicloVida from "./components/CicloVida.jsx";
+import Ajax from "./components/Ajax.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -76,6 +77,8 @@ function App() {
 				<ComunicacionComponente />
 				<hr />
 				<CicloVida />
+				<hr />
+				<Ajax />
 			</div>
 		</>
 	);

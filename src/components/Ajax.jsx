@@ -1,7 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Ajax = () => {
-	return <div>Ajax</div>;
-};
-
-export default Ajax;
+export default class Ajax extends Component {
+	state = {
+		pokemons: []
+	};
+	render() {
+		return (
+			<div>
+				<h2>peticiones asincronas en componentes de clase</h2>
+			</div>
+		);
+	}
+}
