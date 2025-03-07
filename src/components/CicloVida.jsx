@@ -22,6 +22,10 @@ export default class Padre extends Component {
 		console.log(prevState);
 	}
 
+	componentWillUnmount() {
+		console.log(3, "el componente se elimino del DOM");
+	}
+
 	tictac = () => {
 		this.temporizador = setInterval(() => {
 			this.setState({
