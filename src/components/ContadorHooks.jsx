@@ -10,7 +10,7 @@ export default ContadorHooks;
 export default function ContadorHooks() {
 	return (
 		<div>
-			<h2>Contador con Hooks</h2>
+			<h2>Hooks - useState</h2>
 		</div>
 	);
 }
