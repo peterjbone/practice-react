@@ -21,6 +21,9 @@ export default function ContadorHooks() {
 				<button onClick={sumar}>Sumar</button>
 				<button onClick={restar}>restar</button>
 			</nav>
+			<p>
+				<b>{contador}</b>
+			</p>
 		</div>
 	);
 }
