@@ -76,7 +76,7 @@ function App() {
 				<hr />
 				<ComunicacionComponente />
 				<hr />
-				<CicloVida />
+				{/* <CicloVida /> */}
 				<hr />
 				<Ajax />
 			</div>
