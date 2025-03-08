@@ -11,6 +11,7 @@ import { EventosES6, EventosES7, ExtraEventos } from "./components/Eventos.jsx";
 import ComunicacionComponente from "./components/ComunicacionComponente.jsx";
 import CicloVida from "./components/CicloVida.jsx";
 import Ajax from "./components/Ajax.jsx";
+import ContadorHooks from "./components/ContadorHooks.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -79,6 +80,8 @@ function App() {
 				{/* <CicloVida /> */}
 				<hr />
 				<Ajax />
+				<hr />
+				<ContadorHooks />
 			</div>
 		</>
 	);
