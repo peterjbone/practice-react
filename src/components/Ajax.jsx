@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function Pokemon(props) {
 	return (
 		<figure>
 			<img src={props.avatar} alt={props.name} />
+			<figcaption>{props.name}</figcaption>
 		</figure>
 	);
 }
@@ -43,6 +45,9 @@ export default class Ajax extends Component {
 		return (
 			<div>
 				<h2>peticiones asincronas en componentes de clase</h2>
+				{this.state.pokemons.map((item) => (
+					<Pokemon key={uuidv4()} name={item.name} avatar={item.avatar} />
+				))}
 			</div>
 		);
 	}
