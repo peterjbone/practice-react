@@ -81,7 +81,7 @@ function App() {
 				<hr />
 				<Ajax />
 				<hr />
-				<ContadorHooks mensaje="contador de clicks desde app.jsx/>
+				<ContadorHooks mensaje="contador de clicks desde app.jsx" />
 			</div>
 		</>
 	);
