@@ -28,3 +28,7 @@ export default function ContadorHooks() {
 		</div>
 	);
 }
+
+ContadorHooks.defaultProps = {
+	mensaje: "contador de clicks"
+};
