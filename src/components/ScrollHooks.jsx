@@ -2,6 +2,14 @@ import React from "react";
 
 //import React from 'react'
 
+useEffect(() => {
+	console.log("fase de montaje");
+
+	return () => {
+		second;
+	};
+}, [third]);
+
 const ScrollHooks = () => {
 	return (
 		<div>
