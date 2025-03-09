@@ -4,13 +4,10 @@ import React from "react";
 
 useEffect(() => {
 	console.log("fase de montaje");
-
-	return () => {
-		second;
-	};
-}, [third]);
+}, []);
 
 const ScrollHooks = () => {
+	//*****************************COMPONENTE
 	return (
 		<div>
 			<h2>Hooks con useEffect</h2>
