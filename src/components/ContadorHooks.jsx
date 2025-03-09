@@ -9,6 +9,7 @@ export default ContadorHooks;
 
 export default function ContadorHooks() {
 	const [contador, setContador] = useState(0);
+	console.log(contador);
 
 	const sumar = () => setContador(contador + 1);
 	const restar = () => setContador(contador - 1);
