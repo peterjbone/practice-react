@@ -7,6 +7,8 @@ useEffect(() => {
 }, []);
 
 const ScrollHooks = () => {
+	const [scrollY, setScrollY] = useState(0);
+
 	//*****************************COMPONENTE
 	return (
 		<div>
