@@ -7,9 +7,9 @@ import React, { Component, useState } from "react";
 export default ContadorHooks;
  */
 
-export default function ContadorHooks() {
+export default function ContadorHooks({ mensaje }) {
 	const [contador, setContador] = useState(0);
-	console.log(contador);
+	//console.log(contador);
 
 	const sumar = () => setContador(contador + 1);
 	const restar = () => setContador(contador - 1);
@@ -18,6 +18,7 @@ export default function ContadorHooks() {
 	return (
 		<div>
 			<h2>Hooks - useState</h2>
+			<h3>{mensaje}</h3>
 			<nav>
 				<button onClick={sumar}>Sumar</button>
 				<button onClick={restar}>restar</button>
