@@ -12,6 +12,7 @@ import ComunicacionComponente from "./components/ComunicacionComponente.jsx";
 import CicloVida from "./components/CicloVida.jsx";
 import Ajax from "./components/Ajax.jsx";
 import ContadorHooks from "./components/ContadorHooks.jsx";
+import ScrollHooks from "./components/ScrollHooks.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -82,6 +83,8 @@ function App() {
 				<Ajax />
 				<hr />
 				<ContadorHooks mensaje="contador de clicks desde app.jsx" />
+				<hr />
+				<ScrollHooks />
 			</div>
 		</>
 	);
