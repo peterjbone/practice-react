@@ -9,7 +9,9 @@ useEffect(() => {
 		setScrollY(windows.pageYOffset);
 	}
 
-	detectarScroll();
+	//detectarScroll();
+
+	window.addEventListener("scroll", detectarScroll);
 }, []);
 
 const ScrollHooks = () => {
