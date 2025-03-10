@@ -2,6 +2,7 @@ import React from "react";
 
 const ScrollHooks = () => {
 	const [scrollY, setScrollY] = useState(0);
+	const [name, setName] = useState("john");
 
 	useEffect(() => {
 		console.log("movimientos del scroll");
