@@ -3,7 +3,8 @@ import React from "react";
 //import React from 'react'
 
 useEffect(() => {
-	console.log("fase de montaje");
+	console.log("fase de actualización");
+	// cuando el useEffect esta con array vacio
 
 	function detectarScroll() {
 		setScrollY(windows.pageYOffset);
