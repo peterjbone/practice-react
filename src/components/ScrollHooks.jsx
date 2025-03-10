@@ -4,7 +4,7 @@ import React from "react";
 
 useEffect(() => {
 	console.log("fase de actualización");
-	// cuando el useEffect esta con array vacio
+	// cuando el useEffect esta sin array (se ejecuta siempre y no es recomendable)
 
 	function detectarScroll() {
 		setScrollY(windows.pageYOffset);
@@ -14,6 +14,14 @@ useEffect(() => {
 
 	window.addEventListener("scroll", detectarScroll);
 }, []);
+
+useEffect(() => {
+	first;
+
+	return () => {
+		second;
+	};
+}, [third]);
 
 const ScrollHooks = () => {
 	const [scrollY, setScrollY] = useState(0);
