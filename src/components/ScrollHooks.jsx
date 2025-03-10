@@ -25,6 +25,14 @@ const ScrollHooks = () => {
 		// cuando el useEffect esta sin array (se ejecuta siempre y no es recomendable)
 	});
 
+	useEffect(() => {
+		first;
+
+		return () => {
+			second;
+		};
+	}, [third]);
+
 	//*****************************COMPONENTE
 	return (
 		<div>
