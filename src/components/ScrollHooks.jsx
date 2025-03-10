@@ -13,6 +13,7 @@ const ScrollHooks = () => {
 	return (
 		<div>
 			<h2>Hooks con useEffect</h2>
+			<p>Scroll Y del navegador: {scrollY}px</p>
 		</div>
 	);
 };
