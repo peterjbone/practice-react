@@ -4,6 +4,12 @@ import React from "react";
 
 useEffect(() => {
 	console.log("fase de montaje");
+
+	function detectarScroll() {
+		setScrollY(windows.pageYOffset);
+	}
+
+	detectarScroll();
 }, []);
 
 const ScrollHooks = () => {
