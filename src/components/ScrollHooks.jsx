@@ -26,12 +26,10 @@ const ScrollHooks = () => {
 	});
 
 	useEffect(() => {
-		first;
-
 		return () => {
-			second;
+			console.log("fase de desmontaje");
 		};
-	}, [third]);
+	}, []);
 
 	//*****************************COMPONENTE
 	return (
