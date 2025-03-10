@@ -16,12 +16,8 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-	first;
-
-	return () => {
-		second;
-	};
-}, [third]);
+	console.log("fase de montanje");
+}, []);
 
 const ScrollHooks = () => {
 	const [scrollY, setScrollY] = useState(0);
