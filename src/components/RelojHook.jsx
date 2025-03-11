@@ -6,25 +6,29 @@ function Reloj({ hora }) {
 
 function RelojHook() {
 	const [hora, setHora] = useState(new Date().toLocaleTimeString());
-  const [visible, setVisible] = useState(false);
-  let temporizador;
-  
+	const [visible, setVisible] = useState(false);
+	let temporizador;
 
-  function tictac() {
-    temporizador = setInterval(() => {
-      setHora(new Date().toLocaleTimeString())
-    }, 1000);
-  }
+	function tictac() {
+		temporizador = setInterval(() => {
+			setHora(new Date().toLocaleTimeString());
+		}, 1000);
+	}
 
-  function iniciar(){}
-  function detener(){}
+	function iniciar() {
+		tictac();
+	}
+
+	function detener() {
+		clearInterval(temporizador);
+	}
 
 	//* COMPONENTE
 	return (
 		<div>
 			<h2>Reloj con Hooks</h2>
-			<button onClick={}>iniciar</button>
-			<button onClick={}>detener</button>
+			<button onClick={iniciar}>iniciar</button>
+			<button onClick={detener}>detener</button>
 		</div>
 	);
 }
