@@ -16,6 +16,9 @@ function RelojHook() {
     }, 1000);
   }
 
+  function iniciar(){}
+  function detener(){}
+
 	//* COMPONENTE
 	return (
 		<div>
