@@ -11,8 +11,6 @@ const ScrollHooks = () => {
 			setScrollY(windows.pageYOffset);
 		}
 
-		//detectarScroll();
-
 		window.addEventListener("scroll", detectarScroll);
 	}, [scrollY]);
 
