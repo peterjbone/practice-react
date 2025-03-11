@@ -16,10 +16,12 @@ function RelojHook() {
 	}
 
 	function iniciar() {
+		setVisible(true);
 		tictac();
 	}
 
 	function detener() {
+		setVisible(false);
 		clearInterval(temporizador);
 	}
 
