@@ -27,6 +27,9 @@ function RelojHook() {
 	return (
 		<div>
 			<h2>Reloj con Hooks</h2>
+			<p>
+				<b>{visible && <Reloj hora={hora} />}</b>
+			</p>
 			<button onClick={iniciar}>iniciar</button>
 			<button onClick={detener}>detener</button>
 		</div>
