@@ -14,6 +14,8 @@ const ScrollHooks = () => {
 		window.addEventListener("scroll", detectarScroll);
 
 		return () => {
+			console.log("quitando el eventListener de la ventana");
+
 			window.removeEventListener("scroll", detectarScroll);
 		};
 	}, [scrollY]);
