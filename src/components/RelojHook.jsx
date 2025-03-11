@@ -12,6 +12,8 @@ function RelojHook() {
 	return (
 		<div>
 			<h2>Reloj con Hooks</h2>
+			<button onClick={}>iniciar</button>
+			<button onClick={}>detener</button>
 		</div>
 	);
 }
