@@ -12,6 +12,10 @@ const ScrollHooks = () => {
 		}
 
 		window.addEventListener("scroll", detectarScroll);
+
+		return () => {
+			window.removeEventListener("scroll", detectarScroll);
+		};
 	}, [scrollY]);
 
 	useEffect(() => {
