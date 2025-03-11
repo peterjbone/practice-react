@@ -6,7 +6,15 @@ function Reloj({ hora }) {
 
 function RelojHook() {
 	const [hora, setHora] = useState(new Date().toLocaleTimeString());
-	const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
+  let temporizador;
+  
+
+  function tictac() {
+    temporizador = setInterval(() => {
+      setHora(new Date().toLocaleTimeString())
+    }, 1000);
+  }
 
 	//* COMPONENTE
 	return (
