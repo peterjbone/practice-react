@@ -16,13 +16,13 @@ function RelojHook() {
 	}
 
 	function iniciar() {
-		setVisible(true);
 		tictac();
+		setVisible(true);
 	}
 
 	function detener() {
-		setVisible(false);
 		clearInterval(temporizador);
+		setVisible(false);
 	}
 
 	//* COMPONENTE
