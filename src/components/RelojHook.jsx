@@ -26,13 +26,7 @@ function RelojHook() {
 	}
  */
 
-	useEffect(() => {
-		first;
-
-		return () => {
-			second;
-		};
-	}, [third]);
+	useEffect(() => {}, []);
 
 	//* COMPONENTE
 	return (
