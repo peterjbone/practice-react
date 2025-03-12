@@ -41,8 +41,8 @@ function RelojHook() {
 			<p>
 				<b>{visible && <Reloj hora={hora} />}</b>
 			</p>
-			<button onClick={() => tictac()}>iniciar</button>
-			<button onClick={() => tictac()}>detener</button>
+			<button onClick={() => setVisible(true)}>iniciar</button>
+			<button onClick={() => setVisible(false)}>detener</button>
 		</div>
 	);
 }
