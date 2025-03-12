@@ -7,7 +7,7 @@ function Reloj({ hora }) {
 function RelojHook() {
 	const [hora, setHora] = useState(new Date().toLocaleTimeString());
 	const [visible, setVisible] = useState(false);
-	let temporizador;
+	//let temporizador;
 
 	/* 	function tictac(valor) {
 		temporizador = setInterval(() => {
@@ -26,7 +26,9 @@ function RelojHook() {
 	}
  */
 
-	useEffect(() => {}, []);
+	useEffect(() => {
+		let temporizador;
+	}, [visible]);
 
 	//* COMPONENTE
 	return (
