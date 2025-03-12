@@ -28,6 +28,14 @@ function RelojHook() {
 
 	useEffect(() => {
 		let temporizador;
+
+		if (visible) {
+			temporizador = setInterval(() => {
+				setHora(new Date().toLocaleTimeString());
+			}, 1000);
+		} else {
+			clearInterval(temporizador);
+		}
 	}, [visible]);
 
 	//* COMPONENTE
