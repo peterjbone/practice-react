@@ -9,7 +9,7 @@ function RelojHook() {
 	const [visible, setVisible] = useState(false);
 	let temporizador;
 
-	function tictac() {
+	function tictac(valor) {
 		temporizador = setInterval(() => {
 			setHora(new Date().toLocaleTimeString());
 		}, 1000);
@@ -32,8 +32,8 @@ function RelojHook() {
 			<p>
 				<b>{visible && <Reloj hora={hora} />}</b>
 			</p>
-			<button onClick={iniciar}>iniciar</button>
-			<button onClick={detener}>detener</button>
+			<button onClick={() => tictac()}>iniciar</button>
+			<button onClick={() => tictac()}>detener</button>
 		</div>
 	);
 }
