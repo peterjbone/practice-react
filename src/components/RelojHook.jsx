@@ -36,6 +36,11 @@ function RelojHook() {
 		} else {
 			clearInterval(temporizador);
 		}
+
+		return () => {
+			console.log("fase de desmontaje");
+			clearInterval(temporizador);
+		};
 	}, [visible]);
 
 	//* COMPONENTE
