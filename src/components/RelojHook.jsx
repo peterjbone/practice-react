@@ -1,7 +1,7 @@
 import React from "react";
 
 function Reloj({ hora }) {
-	return <h3>{hora}</h3>;
+	return <h3>hora local: {hora}</h3>;
 }
 
 function RelojHook() {
