@@ -13,6 +13,14 @@ const AjaxHooks = () => {
 	const [pokemons, setPokemons] = useState([]);
 	console.log(pokemons);
 
+	useEffect(() => {
+		first;
+
+		return () => {
+			second;
+		};
+	}, [third]);
+
 	//************************** COMPONENTE
 	return (
 		<div>
