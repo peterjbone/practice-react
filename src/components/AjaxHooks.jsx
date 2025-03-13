@@ -28,9 +28,7 @@ const AjaxHooks = () => {
 								avatar: json.sprites.front_default
 							};
 
-							let pokemons = [...this.state.pokemons, pokemon];
-
-							this.setState({ pokemons });
+							setPokemons(() => [...pokemons, pokemon]);
 						});
 				});
 			});
