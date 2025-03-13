@@ -1,6 +1,9 @@
 import React from "react";
 
 const AjaxHooks = () => {
+	const [first, setfirst] = useState(second);
+
+	//************************** COMPONENTE
 	return (
 		<div>
 			<h2>peticiones asincronas en componentes de clase</h2>
