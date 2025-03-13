@@ -11,6 +11,7 @@ function Pokemon({ avatar, name }) {
 
 const AjaxHooks = () => {
 	const [pokemons, setPokemons] = useState([]);
+	console.log(pokemons);
 
 	//************************** COMPONENTE
 	return (
