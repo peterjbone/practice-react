@@ -18,13 +18,10 @@ const AjaxHooks = () => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((json) => {
-				console.log(json);
 				json.results.forEach((item) => {
 					fetch(item.url)
 						.then((res) => res.json())
 						.then((json) => {
-							//console.log(item.name);
-							console.log(json);
 							let pokemon = {
 								id: json.id,
 								name: json.name,
