@@ -14,12 +14,30 @@ const AjaxHooks = () => {
 	console.log(pokemons);
 
 	useEffect(() => {
-		first;
+		let url = "https://pokeapi.co/api/v2/pokemon/";
+		fetch(url)
+			.then((res) => res.json())
+			.then((json) => {
+				console.log(json);
+				json.results.forEach((item) => {
+					fetch(item.url)
+						.then((res) => res.json())
+						.then((json) => {
+							//console.log(item.name);
+							console.log(json);
+							let pokemon = {
+								id: json.id,
+								name: json.name,
+								avatar: json.sprites.front_default
+							};
 
-		return () => {
-			second;
-		};
-	}, [third]);
+							let pokemons = [...this.state.pokemons, pokemon];
+
+							this.setState({ pokemons });
+						});
+				});
+			});
+	}, []);
 
 	//************************** COMPONENTE
 	return (
