@@ -13,7 +13,7 @@ const AjaxHooks = () => {
 	const [pokemons, setPokemons] = useState([]);
 	console.log(pokemons);
 
-	useEffect(() => {
+	/* useEffect(() => {
 		let url = "https://pokeapi.co/api/v2/pokemon/";
 		fetch(url)
 			.then((res) => res.json())
@@ -32,7 +32,7 @@ const AjaxHooks = () => {
 						});
 				});
 			});
-	}, []);
+	}, []); */
 
 	//************************** COMPONENTE
 	return (
