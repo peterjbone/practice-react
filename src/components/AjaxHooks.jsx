@@ -36,21 +36,20 @@ const AjaxHooks = () => {
 	useEffect(() => {
 		const getPokemons = async (url) => {
 			let res = await fetch(url);
-			let json = res.json();
-			console.log(json);
+			let json = await res.json();
+			//console.log(json);
 
-			json.results.forEach((item) => {
-				fetch(item.url)
-					.then((res) => res.json())
-					.then((json) => {
-						let pokemon = {
-							id: json.id,
-							name: json.name,
-							avatar: json.sprites.front_default
-						};
+			json.results.forEach(async (item) => {
+				let res = await fetch(item.url);
+				let json = await res.json();
 
-						setPokemons(() => [...pokemons, pokemon]);
-					});
+				let pokemon = {
+					id: json.id,
+					name: json.name,
+					avatar: json.sprites.front_default
+				};
+
+				setPokemons(() => [...pokemons, pokemon]);
 			});
 		};
 
