@@ -34,7 +34,11 @@ const AjaxHooks = () => {
 	}, []); */
 
 	useEffect(() => {
-		const getPokemons = () => {};
+		const getPokemons = async (url) => {
+			let res = await fetch(url);
+			let json = res.json();
+			console.log(json);
+		};
 
 		getPokemons();
 
