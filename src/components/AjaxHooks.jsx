@@ -33,7 +33,26 @@ const AjaxHooks = () => {
 			});
 	}, []); */
 
-	useEffect(() => {}, []);
+	useEffect(() => {
+		let url = "https://pokeapi.co/api/v2/pokemon/";
+		fetch(url)
+			.then((res) => res.json())
+			.then((json) => {
+				json.results.forEach((item) => {
+					fetch(item.url)
+						.then((res) => res.json())
+						.then((json) => {
+							let pokemon = {
+								id: json.id,
+								name: json.name,
+								avatar: json.sprites.front_default
+							};
+
+							setPokemons(() => [...pokemons, pokemon]);
+						});
+				});
+			});
+	}, []);
 
 	//************************** COMPONENTE
 	return (
