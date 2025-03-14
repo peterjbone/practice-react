@@ -34,6 +34,14 @@ const AjaxHooks = () => {
 			});
 	}, []); */
 
+	useEffect(() => {
+		first;
+
+		return () => {
+			second;
+		};
+	}, [third]);
+
 	//************************** COMPONENTE
 	return (
 		<div>
