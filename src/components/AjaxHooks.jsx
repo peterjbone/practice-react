@@ -11,7 +11,6 @@ function Pokemon({ avatar, name }) {
 
 const AjaxHooks = () => {
 	const [pokemons, setPokemons] = useState([]);
-	console.log(pokemons);
 
 	/* useEffect(() => {
 		let url = "https://pokeapi.co/api/v2/pokemon/";
