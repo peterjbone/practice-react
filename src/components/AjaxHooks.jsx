@@ -34,6 +34,8 @@ const AjaxHooks = () => {
 	}, []); */
 
 	useEffect(() => {
+		const getPokemons = () => {};
+
 		let url = "https://pokeapi.co/api/v2/pokemon/";
 		fetch(url)
 			.then((res) => res.json())
