@@ -15,6 +15,7 @@ import ContadorHooks from "./components/ContadorHooks.jsx";
 import ScrollHooks from "./components/ScrollHooks.jsx";
 import RelojHook from "./components/RelojHook.jsx";
 import AjaxHooks from "./components/AjaxHooks.jsx";
+import CustomHooks from "./components/CustomHooks.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -91,6 +92,8 @@ function App() {
 				<RelojHook />
 				<hr />
 				<AjaxHooks />
+				<hr />
+				<CustomHooks />
 			</div>
 		</>
 	);
