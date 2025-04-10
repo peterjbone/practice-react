@@ -1,7 +1,11 @@
 import React from "react";
 
 const CustomHooks = () => {
-	return <div>CustomHooks</div>;
+	return (
+		<>
+			<h2>Hooks personalizados</h2>
+		</>
+	);
 };
 
 export default CustomHooks;
