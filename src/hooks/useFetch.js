@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 export const useFecth = (url) => {
-	const [first, setData] = useState(null);
+	const [data, setData] = useState(null);
 	const [isPending, setIsPending] = useState(true);
 	const [error, seteError] = useState(null);
 
-	useEffect(() => {
-		first;
+	useEffect(() => {}, [url]);
 
-		return () => {
-			second;
-		};
-	}, [third]);
+	return { data, isPending, error };
 };
