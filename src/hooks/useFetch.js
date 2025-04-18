@@ -8,9 +8,17 @@ export const useFecth = (url) => {
 	useEffect(() => {
 		const getData = async (url) => {
 			try {
+				let res = await fetch(url);
+
+				if (!res.ok) {
+					throw {
+						err: true,
+						status: res.status,
+						statusText: res.statusText || "Ocurrió un error"
+					};
+				}
 			} catch (error) {}
 
-			let res = await fetch(url);
 			let json = await res.json();
 
 			json.results.forEach(async (item) => {
