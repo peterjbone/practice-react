@@ -7,6 +7,9 @@ export const useFecth = (url) => {
 
 	useEffect(() => {
 		const getData = async (url) => {
+			try {
+			} catch (error) {}
+
 			let res = await fetch(url);
 			let json = await res.json();
 
