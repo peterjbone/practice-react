@@ -6,7 +6,7 @@ export const useFecth = (url) => {
 	const [error, seteError] = useState(null);
 
 	useEffect(() => {
-		const getPokemons = async (url) => {
+		const getData = async (url) => {
 			let res = await fetch(url);
 			let json = await res.json();
 			//console.log(json);
@@ -25,7 +25,7 @@ export const useFecth = (url) => {
 			});
 		};
 
-		getPokemons();
+		getData(url);
 	}, [url]);
 
 	return { data, isPending, error };
