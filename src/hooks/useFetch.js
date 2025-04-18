@@ -9,7 +9,6 @@ export const useFecth = (url) => {
 		const getData = async (url) => {
 			let res = await fetch(url);
 			let json = await res.json();
-			//console.log(json);
 
 			json.results.forEach(async (item) => {
 				let res = await fetch(item.url);
