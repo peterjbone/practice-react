@@ -21,8 +21,8 @@ export const useFecth = (url) => {
 				//comienza la peticion
 				let data = await res.json();
 
-				setIsPending();
-				setData();
+				setIsPending(false);
+				setData(data);
 			} catch (error) {}
 
 			json.results.forEach(async (item) => {
