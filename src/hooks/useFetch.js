@@ -17,9 +17,10 @@ export const useFecth = (url) => {
 						statusText: res.statusText || "Ocurrió un error"
 					};
 				}
-			} catch (error) {}
 
-			let json = await res.json();
+				//comienza la peticion
+				let json = await res.json();
+			} catch (error) {}
 
 			json.results.forEach(async (item) => {
 				let res = await fetch(item.url);
