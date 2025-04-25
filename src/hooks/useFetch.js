@@ -25,19 +25,6 @@ export const useFecth = (url) => {
 				setData(data);
 				seteError({ err: false });
 			} catch (error) {}
-
-			json.results.forEach(async (item) => {
-				let res = await fetch(item.url);
-				let json = await res.json();
-
-				let pokemon = {
-					id: json.id,
-					name: json.name,
-					avatar: json.sprites.front_default
-				};
-
-				setPokemons(() => [...pokemons, pokemon]);
-			});
 		};
 
 		getData(url);
