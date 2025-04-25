@@ -19,7 +19,10 @@ export const useFecth = (url) => {
 				}
 
 				//comienza la peticion
-				let json = await res.json();
+				let data = await res.json();
+
+				setIsPending();
+				setData();
 			} catch (error) {}
 
 			json.results.forEach(async (item) => {
