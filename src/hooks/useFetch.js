@@ -23,6 +23,7 @@ export const useFecth = (url) => {
 
 				setIsPending(false);
 				setData(data);
+				seteError({ err: false });
 			} catch (error) {}
 
 			json.results.forEach(async (item) => {
