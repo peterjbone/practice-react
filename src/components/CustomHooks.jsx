@@ -3,6 +3,7 @@ import { useFecth } from "../hooks/useFetch";
 
 const CustomHooks = () => {
 	let url = "https://pokeapi.co/api/v2/pokemon/";
+	url = "https://jsonplaceholder.typicode.com/users";
 
 	//console.log(useFecth);
 
