@@ -16,6 +16,7 @@ import ScrollHooks from "./components/ScrollHooks.jsx";
 import RelojHook from "./components/RelojHook.jsx";
 import AjaxHooks from "./components/AjaxHooks.jsx";
 import CustomHooks from "./components/CustomHooks.jsx";
+import Referencias from "./components/Referencias.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
