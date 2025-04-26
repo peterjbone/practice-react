@@ -1,4 +1,5 @@
 import React from "react";
+import { useFecth } from "../hooks/useFetch";
 
 const CustomHooks = () => {
 	return (
