@@ -4,6 +4,8 @@ const Referencias = () => {
 	return (
 		<>
 			<h2>Referencias</h2>
+			<button id="menu-btn"></button>
+			<nav></nav>
 		</>
 	);
 };
