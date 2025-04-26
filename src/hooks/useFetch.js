@@ -24,7 +24,9 @@ export const useFecth = (url) => {
 				setIsPending(false);
 				setData(data);
 				seteError({ err: false });
-			} catch (error) {}
+			} catch (error) {
+				setIsPending(true);
+			}
 		};
 
 		getData(url);
