@@ -26,6 +26,7 @@ export const useFecth = (url) => {
 				seteError({ err: false });
 			} catch (error) {
 				setIsPending(true);
+				seteError(error);
 			}
 		};
 
