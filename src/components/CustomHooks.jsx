@@ -16,7 +16,11 @@ const CustomHooks = () => {
 			<h3>
 				<mark>{JSON.stringify(error)}</mark>
 			</h3>
-			<h3></h3>
+			<h3>
+				<pre>
+					<code>{JSON.stringify(data)}</code>
+				</pre>
+			</h3>
 		</>
 	);
 };
