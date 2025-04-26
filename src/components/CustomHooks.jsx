@@ -10,7 +10,7 @@ const CustomHooks = () => {
 	return (
 		<>
 			<h2>Hooks personalizados</h2>
-			<h3></h3>
+			<h3>{JSON.stringify()}</h3>
 			<h3></h3>
 			<h3></h3>
 		</>
