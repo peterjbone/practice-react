@@ -17,7 +17,7 @@ const CustomHooks = () => {
 				<mark>{JSON.stringify(error)}</mark>
 			</h3>
 			<h3>
-				<pre style={}>
+				<pre style={{ whiteSpace: "pre-wrap" }}>
 					<code>{JSON.stringify(data)}</code>
 				</pre>
 			</h3>
