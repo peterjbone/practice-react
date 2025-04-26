@@ -95,6 +95,8 @@ function App() {
 				<AjaxHooks />
 				<hr />
 				<CustomHooks />
+				<hr />
+				<Referencias />
 			</div>
 		</>
 	);
