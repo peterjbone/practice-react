@@ -6,6 +6,8 @@ const CustomHooks = () => {
 
 	//console.log(useFecth);
 
+	let { data, isPending, error } = useFecth(url);
+
 	//* componente
 	return (
 		<>
