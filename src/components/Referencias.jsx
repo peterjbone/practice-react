@@ -3,6 +3,10 @@ import React from "react";
 const Referencias = () => {
 	const handleToggleMenu = (e) => {
 		const $menu = document.getElementById("menu");
+
+		if (e.target.textContent === "Menú") {
+			e.target.textContent === "Cerrar";
+		}
 	};
 
 	//* componente
