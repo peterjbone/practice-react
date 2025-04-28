@@ -8,6 +8,8 @@ const Referencias = () => {
 			e.target.textContent === "Cerrar";
 			$menu.style.displey = "block";
 		} else {
+			e.target.textContent === "Menú";
+			$menu.style.displey = "none";
 		}
 	};
 
