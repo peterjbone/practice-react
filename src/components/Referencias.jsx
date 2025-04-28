@@ -6,6 +6,7 @@ const Referencias = () => {
 
 		if (e.target.textContent === "Menú") {
 			e.target.textContent === "Cerrar";
+			$menu.style.displey = "block";
 		} else {
 		}
 	};
