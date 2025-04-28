@@ -10,7 +10,7 @@ const Referencias = () => {
 		<>
 			<h2>Referencias</h2>
 			<button id="menu-btn" onClick={handleToggleMenu}></button>
-			<nav id="menu">
+			<nav id="menu" style={{ display: "none" }}>
 				<a href="#">Seccion 1</a>
 				<br />
 				<a href="#">Seccion 2</a>
