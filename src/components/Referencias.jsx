@@ -1,7 +1,9 @@
 import React from "react";
 
 const Referencias = () => {
-	const handleToggleMenu = () => {};
+	const handleToggleMenu = (e) => {
+		const $menu = document.getElementById("menu");
+	};
 
 	//* componente
 	return (
