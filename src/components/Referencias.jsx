@@ -7,9 +7,13 @@ const Referencias = () => {
 			<button id="menu-btn"></button>
 			<nav id="menu">
 				<a href="#">Seccion 1</a>
+				<br />
 				<a href="#">Seccion 2</a>
+				<br />
 				<a href="#">Seccion 3</a>
+				<br />
 				<a href="#">Seccion 4</a>
+				<br />
 				<a href="#">Seccion 5</a>
 			</nav>
 		</>
