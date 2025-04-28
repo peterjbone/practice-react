@@ -1,10 +1,11 @@
 import React from "react";
 
 const Referencias = () => {
+	//* componente
 	return (
 		<>
 			<h2>Referencias</h2>
-			<button id="menu-btn"></button>
+			<button id="menu-btn" onClick={handleToggleMenu}></button>
 			<nav id="menu">
 				<a href="#">Seccion 1</a>
 				<br />
