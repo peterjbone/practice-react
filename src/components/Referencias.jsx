@@ -6,13 +6,13 @@ const Referencias = () => {
 	const handleToggleMenu = (e) => {
 		const $menu = document.getElementById("menu");
 
-		if (e.target.textContent === "Menú") {
+		/* 	if (e.target.textContent === "Menú") {
 			e.target.textContent === "Cerrar";
 			$menu.style.displey = "block";
 		} else {
 			e.target.textContent === "Menú";
 			$menu.style.displey = "none";
-		}
+		} */
 	};
 
 	//* componente
