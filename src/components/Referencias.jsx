@@ -19,8 +19,8 @@ const Referencias = () => {
 	return (
 		<>
 			<h2>Referencias</h2>
-			<button id="menu-btn" onClick={handleToggleMenu}></button>
-			<nav id="menu" style={{ display: "none" }}>
+			<button id="menu-btn" onClick={handleToggleMenu} ref={refMenuBtn}></button>
+			<nav id="menu" style={{ display: "none" }} ref={refMenu}>
 				<a href="#">Seccion 1</a>
 				<br />
 				<a href="#">Seccion 2</a>
