@@ -19,11 +19,11 @@ const Referencias = () => {
 		} */
 
 		if (refMenuBtn.current.textContent === "Menú") {
-			e.target.textContent === "Cerrar";
-			$menu.style.displey = "block";
+			refMenuBtn.current.textContent === "Cerrar";
+			refMenu.current.style.display = "block";
 		} else {
-			e.target.textContent === "Menú";
-			$menu.style.displey = "none";
+			refMenuBtn.current.textContent === "Menú";
+			refMenu.current.style.display = "none";
 		}
 	};
 
