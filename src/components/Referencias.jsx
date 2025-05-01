@@ -6,7 +6,7 @@ const Referencias = () => {
 	let refMenu = createRef(),
 		refMenuBtn = useRef();
 
-	console.log();
+	console.log(refMenu, refMenuBtn);
 
 	const handleToggleMenu = (e) => {
 		const $menu = document.getElementById("menu");
