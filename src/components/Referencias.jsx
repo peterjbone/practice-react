@@ -9,8 +9,7 @@ const Referencias = () => {
 	console.log(refMenu, refMenuBtn);
 
 	const handleToggleMenu = (e) => {
-		const $menu = document.getElementById("menu");
-
+		//const $menu = document.getElementById("menu");
 		/* 	if (e.target.textContent === "Menú") {
 			e.target.textContent === "Cerrar";
 			$menu.style.displey = "block";
@@ -18,6 +17,14 @@ const Referencias = () => {
 			e.target.textContent === "Menú";
 			$menu.style.displey = "none";
 		} */
+
+		if (refMenuBtn.current.textContent === "Menú") {
+			e.target.textContent === "Cerrar";
+			$menu.style.displey = "block";
+		} else {
+			e.target.textContent === "Menú";
+			$menu.style.displey = "none";
+		}
 	};
 
 	//* componente
