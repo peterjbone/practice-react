@@ -3,6 +3,9 @@ import React, { createRef, useRef } from "react";
 const Referencias = () => {
 	//let refMenu = createRef();
 
+	let refMenu = createRef(),
+		refMenuBtn = useRef();
+
 	const handleToggleMenu = (e) => {
 		const $menu = document.getElementById("menu");
 
