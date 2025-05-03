@@ -17,6 +17,7 @@ import RelojHook from "./components/RelojHook.jsx";
 import AjaxHooks from "./components/AjaxHooks.jsx";
 import CustomHooks from "./components/CustomHooks.jsx";
 import Referencias from "./components/Referencias.jsx";
+import Formularios from "./components/Formularios.jsx";
 
 function App() {
 	let subtitulo = "practicing react";
@@ -97,6 +98,8 @@ function App() {
 				<CustomHooks />
 				<hr />
 				<Referencias />
+				<hr />
+				<Formularios />
 			</div>
 		</>
 	);
